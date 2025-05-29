@@ -103,6 +103,7 @@ if lang_code != 'EN':
    name_orig = df.iloc[selected_index]['Name (Original)']
 
 # Display combined title
+st.divider()
 if lang_code != 'EN':
     st.markdown(f"<div class='stotra-title'>{name_roman} / {name_orig}</div>", 
             unsafe_allow_html=True)
@@ -122,6 +123,7 @@ if os.path.exists(file_path):
     st.text(content)
 else:
     st.error("File not found. Please check the file structure.")
+st.divider()
 
 st.markdown('<div style="margin-top: 16px;">Check out Sahajayoga Bhajan Sangraha for getting lyrics of Bhajans:</div>', unsafe_allow_html=True)
 st.link_button("Sahajayoga Bhajan Sangraha", "https://sahajayogabhajansangraha.streamlit.app/", type="primary")
