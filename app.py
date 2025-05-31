@@ -90,18 +90,18 @@ selected_stotra = st.selectbox('Select Stotra', stotra_options)
 # Script selection
 if lang_code == 'SA':
    script_map = {
-       'Devanagari': 'DN',
-       'English': 'EN',
+       'Devanagari (Marathi/Hindi)': 'DN',
+       'Roman (English)': 'EN',
        'IAST': 'IA'
    }
 elif lang_code != 'EN':
    script_map = {
-       'Devanagari': 'DN',
-       'English': 'EN',
+       'Devanagari (Marathi/Hindi)': 'DN',
+       'Roman (English)': 'EN',
        'ISO 15919 Indic': 'ISO'
    }
 else:
-   script_map = {'EN': 'EN'}
+   script_map = {'Roman (English)': 'EN'}
 script = st.selectbox('Select Script', list(script_map.keys()), index=0)
 
 
