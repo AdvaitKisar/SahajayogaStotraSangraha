@@ -101,7 +101,7 @@ elif lang_code != 'EN':
        'ISO 15919 Indic': 'ISO'
    }
 else:
-   script_map = {'Roman (English)': 'EN'}
+   script_map = {'Roman (English)': 'EN', 'Devanagari (Marathi/Hindi)': 'DN'}
 script = st.selectbox('Select Script', list(script_map.keys()), index=0)
 
 
